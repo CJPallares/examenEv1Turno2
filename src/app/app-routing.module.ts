@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'reservas-usuario',
+    loadChildren: () => import('./reservas-usuario/reservas-usuario.module').then( m => m.ReservasUsuarioPageModule)
+  },
 ];
 
 @NgModule({
