@@ -94,7 +94,7 @@ export class HomePage implements OnInit {
             this.usuario=new Usuario(objetoUsuario.id, usuario, password);
             correcto=true;
         }
-        else{  //si la clave no soincide no se valida
+        else{  //si la clave no coincide no se valida
             correcto=false;
         }
       }
